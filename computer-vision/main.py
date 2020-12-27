@@ -203,11 +203,7 @@ class MainPage():
 		scale=0.22
 		self.takeFrame()
 		totalCounter+=1
-		if i%2:
-			frame=cv2.imread("image2.jpg",1)
-		else:
-			frame=cv2.imread("image2.jpg",1)
-		i+=1
+		frame=cv2.imread("image2.jpg",1)
 		height, width, _ = frame.shape
 		frame=cv2.resize(frame,(int(width*scale),int(height*scale)))
 		#Convert frame to hsv
