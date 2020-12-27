@@ -29,7 +29,7 @@ class Application(tk.Frame):
         self.header = tk.Frame(self)
         self.header["bg"] = TEXT_MAIN_COLOR
         self.inc_name = tk.Label(self.header)
-        self.inc_name["text"] = "INCORPORATION"
+        self.inc_name["text"] = "INC."
         self.inc_name["fg"] = PRIMARY_COLOR
         self.inc_name["bg"] = TEXT_MAIN_COLOR
         self.inc_name["font"] = FONT_TITLE
@@ -148,6 +148,6 @@ root = tk.Tk()
 app = Application(master=root)
 app.master.minsize(600,800)
 app.master.title("Multitech: Tri")
-app.master.iconbitmap("box-icone.ico")
+#app.master.iconbitmap("box-icone.ico")
 app.configure(bg=PRIMARY_COLOR)
-app.mainl
+app.mainloop()
